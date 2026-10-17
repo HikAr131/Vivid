@@ -71,3 +71,5 @@ Vivid 本体使用 **GPL-3.0-only**；运行时下载的第三方组件分别受
 
 本仓库用于提供下载与更新说明。DLSS 是 NVIDIA Corporation 的商标；
 Vivid 与 NVIDIA 无隶属关系，不随包分发 NVIDIA、ReShade 或 RenoDX 的第三方运行时。
+
+平台图标：抖音来自 Streamline Logos（CC BY 4.0），B站来自 Remix Icon 2.5.0（Apache-2.0，经 SVG Repo），小红书来自 Simple Icons（CC0-1.0，经 Streamline）。[Free icons from Streamline](https://streamlinehq.com)；完整来源、修改说明与许可全文见程序「免责声明 → 第三方组件」。
