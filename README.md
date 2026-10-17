@@ -2,52 +2,15 @@
 
 > 画质常新，安心去试。
 
-给中文 3A 玩家的 DLSS 画质增强一键管理器。选游戏 → 查看支持情况 → 安装组件；出问题可一键还原。
+## 锐境 Vivid 已停止维护
 
-## 下载与使用
+2026-10-17 起，锐境 Vivid 不再更新，之后的更新和反馈只在 **Vivid-V2** 进行。
 
-下载 [Vivid.zip](https://github.com/HikAr131/Vivid/releases/latest/download/Vivid.zip)，解压后启动 **Vivid.exe**，不需要安装。
-历史版本与更新说明见 [Releases](https://github.com/HikAr131/Vivid/releases)。
+**下载 Vivid-V2**：https://github.com/HikAr131/Vivid-V2-releases/releases/latest
 
-适用于 Windows 10 / 11。程序会检测 NVIDIA 显卡和驱动，并显示 RHI 上游兼容声明；
-上游声明不等于 NVIDIA 官方支持，也不代表 Vivid 已验证你的设备和游戏。
-
-1. 从扫描到的 Steam 游戏中选择一款，阅读支持情况与风险说明。
-2. 完全退出游戏，再点击安装。需要的组件会从上游下载，原文件自动备份。
-3. 进入单机游戏自行确认效果；需要恢复时，退出游戏后使用「一键还原」。
-
-## 它能做什么
-
-- 扫描本机 Steam 游戏库，显示可安装、未实测或不提供安装的原因；不支持 Epic、Rockstar 独立版等其他启动器。
-- 按 [RHI](https://github.com/RankFTW/RHI) 在线清单管理四个组件：ReShade、RenoDX DLSS5 addon、DLSS-NR、DLSS 超分。
-- 提供安装、更新、修复、状态检测与还原。更新需要你主动确认，不会自动替换游戏文件。
-- 首次接管文件时保存原始备份，后续更新不覆盖；检测到其他工具改动文件时，提示冲突，不直接覆盖。
-
-Vivid 使用 Rust + egui。第三方运行时不随 Vivid 打包，不由作者托管或镜像；
-只有你明确安装或更新时，才按 RHI 清单及上游发布地址下载到本机缓存。
-组件来源、版本、下载地址与 SHA-256 可在游戏详情中查看。本地 SHA-256 是文件指纹，不是上游签名验证。
-
-## 哪些情况不提供安装
-
-**判不出图形 API，或检测到反作弊且没有已验证的单机入口，就不提供安装。**
-这些游戏仍会列出并说明原因。反作弊检测并不完整，未检测到不代表没有反作弊，请仅用于单机。
-
-GTA5 Enhanced 与 RDR2 有专用方案；其余符合条件的游戏标为「未实测」，
-不保证画面效果或兼容性，不承诺安装后一定能正常运行。
-
-- **GTA5 Enhanced 只提供单机入口**：通过 Steam 使用一次性 -nobattleye 参数启动，不修改永久启动选项，不提供 GTA Online 入口。
-- **RDR2 为实验支持**：使用全局 Vulkan ReShade layer，会改动 C:\ProgramData\ReShade 与系统注册表，影响这台电脑上所有 Vulkan 游戏。安装前需单独确认，相关操作可能请求管理员权限。不要在游戏设为 DX12 时套用 Vulkan 方案。
-
-不要带着修改后的文件进入联机模式。第三方组件可能违反游戏用户协议，游戏方可能检测并处罚。
-
-## 文件装上了，不代表画面有效
-
-2026-08-31 对 RenoDX DLSS5 Generic v4.6 的实测边界是：**DLSS 5 神经渲染只在 D3D12 路径工作**。
-RDR2 的 Vulkan 路径虽能载入 ReShade 和插件，但 NR 未被调用；非 D3D12 游戏不能据此宣称 NR 生效。
-这是当时版本的实测结果，不代表已验证当前上游的所有版本。
-
-程序区分文件已安装、检测到组件载入或运行与画面效果待实测。
-**文件复制成功、哈希一致或日志显示载入，都不能证明画面改善；效果需要你进游戏确认。**
+- Vivid-V2 能认出旧版锐境 Vivid 装过的游戏，并直接还原；还原之后再用 Vivid-V2 安装。
+- 《荒野大镖客：救赎 2》这类装过全局 Vulkan 组件的游戏，还原需要管理员权限：请先下载旧版 [v0.1.3](https://github.com/HikAr131/Vivid/releases/tag/v0.1.3)（[直接下载 Vivid.zip](https://github.com/HikAr131/Vivid/releases/download/v0.1.3/Vivid.zip)），打开后点「一键还原」。
+- 旧版历史下载仍在 [Releases](https://github.com/HikAr131/Vivid/releases)。
 
 ## 免费公开分享
 
@@ -73,5 +36,3 @@ Vivid 本体使用 **GPL-3.0-only**；运行时下载的第三方组件分别受
 Vivid 与 NVIDIA 无隶属关系，不随包分发 NVIDIA、ReShade 或 RenoDX 的第三方运行时。
 
 平台图标：抖音来自 Streamline Logos（CC BY 4.0），B站来自 Remix Icon 2.5.0（Apache-2.0，经 SVG Repo），小红书来自 Simple Icons（CC0-1.0，经 Streamline）。[Free icons from Streamline](https://streamlinehq.com)；完整来源、修改说明与许可全文见程序「免责声明 → 第三方组件」。
-
-有新版本时每版自动提醒一次，也可以随时在「关于」手动检查。选择「稍后再说」可继续使用，选择「去下载」会在浏览器打开发布页；Vivid 不会自动替换程序。
