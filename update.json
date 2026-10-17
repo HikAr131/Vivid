@@ -1,6 +1,6 @@
 {
-  "version": "0.1.3",
-  "notes": "一些其他改進與修復",
-  "download_url": "https://github.com/HikAr131/Vivid/releases/latest",
+  "version": "0.1.4",
+  "notes": "锐境 Vivid 已停止维护，之后的更新和反馈只在 Vivid-V2。\nVivid-V2 能接手还原旧版装过的游戏，并支持 Steam、Epic、GOG、Xbox 等游戏库。\n点「去下载」会打开发布页，按页面里的链接下载 Vivid-V2。",
+  "download_url": "https://github.com/HikAr131/Vivid-V2-releases/releases/latest",
   "published": "2026-10-17"
 }
