@@ -1,48 +1,50 @@
-# 锐境 Vivid
+# 銳境 Vivid
 
-> 画质常新，安心去试。
+[繁體中文](README.md) · [English](README.en.md)
 
-## 锐境 Vivid 已停止维护
+> 畫質常新，安心嘗試。
 
-2026-10-17 起，锐境 Vivid 不再更新，之后的更新和反馈只在 **Vivid-V2** 进行。
+為中文玩家打造的顯示卡畫質管理工具，使用 Rust 與 egui 開發。
 
-**下载 Vivid-V2**：https://github.com/HikAr131/Vivid-V2-releases/releases/latest
+## 銳境 Vivid 已停止維護
 
-- Vivid-V2 能认出旧版锐境 Vivid 装过的游戏，并直接还原；还原之后再用 Vivid-V2 安装。
-- 《荒野大镖客：救赎 2》这类装过全局 Vulkan 组件的游戏，还原需要管理员权限：请先下载旧版 [v0.1.3](https://github.com/HikAr131/Vivid/releases/tag/v0.1.3)（[直接下载 Vivid.zip](https://github.com/HikAr131/Vivid/releases/download/v0.1.3/Vivid.zip)），打开后点「一键还原」。
-- 旧版历史下载仍在 [Releases](https://github.com/HikAr131/Vivid/releases)。
+自 2026-10-17 起，銳境 Vivid 不再更新；後續更新與問題回報請至 **Vivid-V2**。
 
-## 源码与构建
+**[下載 Vivid-V2](https://github.com/HikAr131/Vivid-V2-releases/releases/latest)**
 
-本仓库已公开 Vivid 的完整应用源码，采用 **GPL-3.0-only**，允许按许可证使用、修改和再分发，包括商业用途。
-再分发时按 GPL 保留适用的版权、许可与合理署名声明，修改版须明确标记修改；项目名称、作者与源码网址见 [NOTICE](NOTICE)。
-源码开放不代表恢复维护；第三方组件、字体与图标仍受各自许可约束。
+- Vivid-V2 可辨識舊版銳境 Vivid 安裝過的遊戲元件，並將其還原；還原後再使用 Vivid-V2 安裝。
+- 《Red Dead Redemption 2》這類安裝過全域 Vulkan 元件的遊戲，還原時需要系統管理員權限：請先下載舊版 [v0.1.3](https://github.com/HikAr131/Vivid/releases/tag/v0.1.3)（[直接下載 Vivid.zip](https://github.com/HikAr131/Vivid/releases/download/v0.1.3/Vivid.zip)），開啟後使用還原功能。
+- 舊版下載仍保留於 [Releases](https://github.com/HikAr131/Vivid/releases)。
 
-- [从源码构建与验证](docs/BUILDING.md)：Windows x64、Rust 1.96.0+、MSVC / Windows SDK、Python 3。
-- [核心逻辑](crates/vivid-core/) · [egui 介面](crates/vivid-gui/) · [LICENSE](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)。
-- [源码快照说明](SOURCE.md)：源码范围、版本与验证结果。
+## 原始碼與建置
 
-## 免费公开分享
+本儲存庫已公開 Vivid 的完整應用程式原始碼，採用 **GPL-3.0-only**，允許依授權條款使用、修改及重新散布，包括商業用途。
+重新散布時，應依 GPL 保留適用的著作權、授權與合理署名聲明，修改版本須明確標示變更；專案名稱、作者與原始碼網址請見 [NOTICE](NOTICE)。
+公開原始碼不代表恢復維護；第三方元件、字型與圖示仍適用各自的授權條款。
 
-这个软件免费给大家使用。有好的建议或反馈，欢迎在下面这些平台告诉我。
+- [從原始碼建置與驗證](docs/BUILDING.md)：Windows x64、Rust 1.96.0+、MSVC / Windows SDK、Python 3。
+- [核心邏輯](crates/vivid-core/) · [egui 介面](crates/vivid-gui/) · [授權條款](LICENSE) · [第三方聲明](THIRD_PARTY_NOTICES.md)。
+- [原始碼快照說明](SOURCE.md)：原始碼範圍、版本與驗證結果。
 
-- 抖音：[Hikari（三角洲行动）](https://www.douyin.com/user/MS4wLjABAAAAE1GMl_LBdFUJywgN__Kv1vB9PcgKgwjZ0VbyBSFidfI)
-- B站：[Hikari三角洲行动](https://space.bilibili.com/3690980263856410)
-- 小红书：[Hikari（三角洲行动）](https://www.xiaohongshu.com/user/profile/67f9175a000000000a03e7b9)
+## 免費公開分享
 
-程序「关于与作者」页提供以上渠道及「请我喝杯咖啡」入口。
-咖啡完全自愿，不解锁任何功能，也不换取任何服务。
+這個軟體免費提供給大家使用。若有建議或想回報問題，歡迎透過以下平台聯絡作者。
 
-## 免责声明与许可
+- 抖音：[Hikari](https://www.douyin.com/user/MS4wLjABAAAAE1GMl_LBdFUJywgN__Kv1vB9PcgKgwjZ0VbyBSFidfI)
+- Bilibili：[Hikari](https://space.bilibili.com/3690980263856410)
+- 小紅書：[Hikari](https://www.xiaohongshu.com/user/profile/67f9175a000000000a03e7b9)
 
-使用前请阅读程序「关于与作者 → 免责声明」中的完整说明；
-最后一节「第三方组件」列出随程序分发的依赖、版本和许可证，并可展开查看许可证全文。
+程式的「關於與作者」頁面也提供上述連結，以及「請我喝杯咖啡」入口。
+贊助完全自願，不會解鎖功能，也不換取任何服務。
 
-Vivid 本体使用 **GPL-3.0-only**；运行时下载的第三方组件分别受各自许可约束。
-程序内嵌 Resource Han Rounded CN（思源圆体），授权为 SIL Open Font License 1.1；
-发行包中的 OFL.txt、FONT-LICENSE.md 提供字体许可与说明。
+## 免責聲明與授權
 
-本仓库提供源码、历史下载与更新说明。DLSS 是 NVIDIA Corporation 的商标；
-Vivid 与 NVIDIA 无隶属关系，不随包分发 NVIDIA、ReShade 或 RenoDX 的第三方运行时。
+使用前，請閱讀程式「關於與作者」頁面中的完整免責聲明。
+最後的「第三方元件」區段列出隨程式散布的相依套件、版本與授權條款，並可展開檢視條款全文。
 
-平台图标：抖音来自 Streamline Logos（CC BY 4.0），B站来自 Remix Icon 2.5.0（Apache-2.0，经 SVG Repo），小红书来自 Simple Icons（CC0-1.0，经 Streamline）。[Free icons from Streamline](https://streamlinehq.com)；完整来源、修改说明与许可全文见程序「免责声明 → 第三方组件」。
+Vivid 本體採用 **GPL-3.0-only**；執行期間下載的第三方元件適用各自的授權條款。
+程式內嵌 Resource Han Rounded CN 字型，採用 SIL Open Font License 1.1；發行套件中的 `OFL.txt` 與 `FONT-LICENSE.md` 提供字型授權與相關說明。
+
+本儲存庫提供原始碼、舊版下載與更新說明。DLSS 為 NVIDIA Corporation 的商標；Vivid 與 NVIDIA 並無隸屬關係，也不隨套件散布 NVIDIA、ReShade 或 RenoDX 的第三方執行階段元件。
+
+平台圖示來源：抖音來自 Streamline Logos（CC BY 4.0），Bilibili 來自 Remix Icon 2.5.0（Apache-2.0，經由 SVG Repo 取得），小紅書來自 Simple Icons（CC0-1.0，經由 Streamline 取得）。[Free icons from Streamline](https://streamlinehq.com)；完整來源、修改說明與授權條款全文，請見程式免責聲明中的「第三方元件」區段。
