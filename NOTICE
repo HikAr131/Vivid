@@ -1,0 +1,21 @@
+锐境 Vivid
+Copyright (C) 2026 Hikari
+Project: https://github.com/HikAr131/Vivid
+License: GPL-3.0-only (see LICENSE)
+
+Original project attribution / 原作署名
+
+This file identifies the original project, author, and source repository.
+When redistributing Vivid or covered modifications, preserve the applicable
+copyright, license, and reasonable attribution notices as required by the
+GNU General Public License version 3. Mark modified versions as modified.
+This notice adds no restrictions to that license; commercial use and paid
+redistribution remain permitted under its terms.
+
+本文件汇总原作的项目名称、作者与源码网址。再分发 Vivid 或受 GPL
+涵盖的修改版时，应按 GPL 第 3 版保留适用的版权、许可与合理署名声明，
+并明确标记修改。可以随许可证保留本文件，便于接收者查阅原作信息。
+本声明不增加 GPL 之外的限制；商业使用与收费再分发仍按 GPL 允许。
+
+Third-party components and assets retain their own notices and licenses.
+See THIRD_PARTY_NOTICES.md and the embedded license inventory.

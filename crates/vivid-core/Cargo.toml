@@ -1,0 +1,37 @@
+[package]
+name = "vivid-core"
+description = "锐境 Vivid 核心逻辑：游戏库扫描、DLL 编目、备份与还原"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow = "1.0.104"
+chrono = { version = "0.4.45", default-features = false, features = ["clock", "std"] }
+pelite = "0.10.0"
+regex = "1.11"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+sha2 = "0.11.0"
+thiserror = "2.0.20"
+ureq = "3.4.0"
+url = "2.5"
+walkdir = "2.5.0"
+zip = { version = "5", default-features = false, features = ["deflate"] }
+
+# 只给测试用的夹具（FakeHttp / FakeSystemBackend / FakeEnvironment）。
+# 单元测试靠 cfg(test) 就能用；集成测试（tests/end_to_end.rs）链接的是
+# 普通的 lib，所以要靠这个特性把 `testing` 模块打开。
+# 发布构建不开这个特性，夹具一行都不会进产物。
+[features]
+testing = []
+
+[dev-dependencies]
+tempfile = "3.21"
+# 自依赖：只为了给集成测试打开 `testing` 特性。
+vivid-core = { path = ".", features = ["testing"] }
+
+[target."cfg(windows)".dependencies]
+libloading = "0.9.0"
+winreg = "0.56.0"

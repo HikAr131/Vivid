@@ -1,0 +1,25 @@
+# 行尾约定：文本文件在索引/提交中一律规范化为 LF，
+# 这样 `git diff --check` 不会把 CR 误报成行尾空白。
+# 工作区行尾：源码/配置保持历史习惯 CRLF，文档与许可 LF。
+*.rs text eol=crlf
+*.toml text eol=crlf
+*.json text eol=crlf
+*.html text eol=crlf
+*.ini text eol=crlf
+*.ps1 text eol=crlf
+.gitignore text eol=crlf
+rustfmt.toml text eol=crlf
+
+*.md text eol=lf
+LICENSE text eol=lf
+
+# Deterministic generated notices and evidence must survive a fresh checkout.
+crates/vivid-gui/assets/third-party-licenses.json text eol=lf
+docs/testing/about-2026-10-17/*.json text eol=lf
+scripts/licenses/* text eol=lf
+# Keep verbatim upstream license text, including its final blank line.
+scripts/licenses/social-CC-BY-4.0.txt whitespace=-blank-at-eof
+crates/vivid-gui/assets/social-icons/*.svg -text
+crates/vivid-gui/assets/social-icons/*.png binary
+crates/vivid-gui/assets/social-icons/*.json text eol=lf
+crates/vivid-gui/assets/social-icons/*.md text eol=lf

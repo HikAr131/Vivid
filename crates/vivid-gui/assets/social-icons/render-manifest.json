@@ -1,0 +1,21 @@
+{
+  "renderer": "sharp 0.35.5 / librsvg 2.63.2",
+  "size": 96,
+  "icons": [
+    {
+      "name": "douyin",
+      "svg_sha256": "27e7ddb554afce4f82230c96316cbd2f1c2aec913d6a1b9270da3d576d78e37b",
+      "png_sha256": "33b55ef20468d96ab7c69a66033574e0fdd5412e3118c735606afc69c3f4bca3"
+    },
+    {
+      "name": "bilibili",
+      "svg_sha256": "bb72e2f6d639441875888cbb4f11b8a4889a8ac3d60f60742c0a8ae02bdfa382",
+      "png_sha256": "77139bfb83e95d5c2049ffbcbbc8dcca46a9d1b5e82839a6a0f98dd8936067ba"
+    },
+    {
+      "name": "xiaohongshu",
+      "svg_sha256": "e0b1ee5c7cbf9b1e1de5f8fc4783581089a85eef1e4fd4886c5e85418425f779",
+      "png_sha256": "8391053ffece58c7f7daa5b6c3f01104ebd33f4e6ecdb54c596a66e64ad17d7f"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# 仓库历史使用 CRLF 行尾（Windows）。只锁定行尾风格，
+# 避免 rustfmt 把整个文件重写成 LF、污染 diff。
+newline_style = "Windows"

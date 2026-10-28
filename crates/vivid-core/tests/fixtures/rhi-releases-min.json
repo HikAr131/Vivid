@@ -1,0 +1,30 @@
+[
+  {
+    "tag_name": "renodx-dlss5-4.5",
+    "assets": [{
+      "name": "renodx-dlss5_4.5.zip",
+      "browser_download_url": "https://github.com/RankFTW/rhi-repo/releases/download/renodx-dlss5-4.5/renodx-dlss5_4.5.zip"
+    }]
+  },
+  {
+    "tag_name": "renodx-dlss5-4.60",
+    "assets": [{
+      "name": "renodx-dlss5_4.60.zip",
+      "browser_download_url": "https://github.com/RankFTW/rhi-repo/releases/download/renodx-dlss5-4.60/renodx-dlss5_4.60.zip"
+    }]
+  },
+  {
+    "tag_name": "renodx-dlss5-4.55",
+    "assets": [{
+      "name": "renodx-dlss5_4.55.zip",
+      "browser_download_url": "https://github.com/RankFTW/rhi-repo/releases/download/renodx-dlss5-4.55/renodx-dlss5_4.55.zip"
+    }]
+  },
+  {
+    "tag_name": "something-else-9.9.9",
+    "assets": [{
+      "name": "unrelated.zip",
+      "browser_download_url": "https://github.com/RankFTW/rhi-repo/releases/download/something-else-9.9.9/unrelated.zip"
+    }]
+  }
+]

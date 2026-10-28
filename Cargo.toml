@@ -1,0 +1,15 @@
+[workspace]
+resolver = "3"
+members = ["crates/vivid-core", "crates/vivid-gui"]
+
+[workspace.package]
+version = "0.1.3"
+edition = "2024"
+rust-version = "1.96"
+license = "GPL-3.0-only"
+
+[workspace.dependencies]
+
+# 素材目录不是 Rust 工程，别让 cargo 去看它们
+[workspace.metadata]
+note = "DLSS 5/ 与 DLSS5-GTAV-DropIn/ 是本机研究素材，非本项目产物，见 CLAUDE.md 第七节"

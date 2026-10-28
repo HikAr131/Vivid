@@ -1,0 +1,77 @@
+# ============================================================================
+# 最高优先级：以下二进制**永远不能进版本库**，进了就是分发侵权物
+# ============================================================================
+#
+# 第三方运行时只允许在用户明确操作后下载到 LOCALAPPDATA 缓存。
+# 任何 DLL、addon、PTX 和压缩包都不得进入源码仓库或 Vivid 安装包。
+# 本机素材目录（DLSS 5/、DLSS5-GTAV-DropIn/）仅供研究参考，不是产物。
+#
+# 尤其注意：`git add -A` / `git add .` 会把它们一并收进来。
+# 提交前一律 `git status` 逐个确认，绝不用通配 add。
+
+# —— NVIDIA 闭源运行时（版权物，无分发权）——
+nvngx_*.dll
+sl.*.dll
+*/nvngx_*.dll
+*/sl.*.dll
+
+# —— 逆向产物（规避技术措施，最烫的一类）——
+*.ptx
+dlssnr-sm86-patched/
+*/dlssnr-sm86-patched/
+
+# —— ReShade / RenoDX 等第三方二进制（可运行时下载，不入库）——
+*.dll
+*.exe
+*.addon64
+*.addon32
+dxgi.dll
+d3d11.dll
+d3d12.dll
+opengl32.dll
+
+# —— 整包素材 ——
+*.zip
+*.7z
+*.rar
+DLSS 5/
+DLSS5-GTAV-DropIn/
+RHI-Setup.exe
+
+# ============================================================================
+# 常规忽略
+# ============================================================================
+
+# Rust
+/target/
+/dist/
+**/*.rs.bk
+*.pdb
+
+# 本地配置与缓存
+.env
+.env.local
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+.update-keys/
+*.log
+# 例外：真实 ReShade 日志样本是测试夹具，必须入库——
+# 它被 include_str! 编进测试，不入库新克隆直接编译不过。
+!crates/vivid-core/tests/fixtures/*.log
+/cache/
+/downloads/
+
+# 临时计划笔记（同 1U 的约定：plan/ 只在本地，docs/ 才入库）
+/plan/
+/.plan.md
+__pycache__/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

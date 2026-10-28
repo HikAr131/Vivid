@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "wikiNameOverrides": {
+    "Grand Theft Auto V Enhanced": "Grand Theft Auto V : Enhanced",
+    "Red Dead Redemption 2": "Red Dead Redemption 2 (Vulkan)"
+  },
+  "graphicsApiOverrides": {
+    "Red Dead Redemption 2": "VLK"
+  }
+}

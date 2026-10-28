@@ -1,0 +1,25 @@
+11:09:06:143 [ 4428] | INFO  | Initializing crosire's ReShade version '6.8.0.2155' (64-bit) loaded from 'H:\Steam\steamapps\common\Grand Theft Auto V Enhanced\DXGI.DLL' into 'H:\Steam\steamapps\common\Grand Theft Auto V Enhanced\GTA5_Enhanced.exe' (0xA30E9E6F) ...
+11:09:06:419 [ 4428] | INFO  | Searching for add-ons (*.addon, *.addon64) in 'H:\Steam\steamapps\common\Grand Theft Auto V Enhanced' ...
+11:09:06:420 [ 4428] | INFO  | Loading add-on from 'H:\Steam\steamapps\common\Grand Theft Auto V Enhanced\renodx-dlss5.addon64' ...
+11:09:06:423 [ 4428] | INFO  | Registered add-on "DLSS 5 Neural Rendering" v0.2026.828.517 using ReShade API version 18.
+11:09:06:424 [ 4428] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: RenoDX DLSS5 Generic v4.6 (build Aug 31 2026 22:43:03) loaded (hotkeys: NR toggle F6, screenshot F5) | EnableHooks=2: NGX hooks only, Streamline modules left unpatched
+11:09:07:040 [ 4428] | WARN  | [DLSS 5 Neural Rendering] DLSS5 Generic: signed runtime sha256 6EB209E764F39872625DEBD6ABAF45E2BB6322F6F270F781F70C059AE30B3927 (custom runtime accepted; untested build, NR failures may be specific to it)
+11:09:07:040 [ 4428] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: signed NR runtime (nvngx_dlssnr.dll) pre-loaded at device init
+11:09:07:041 [ 4428] | INFO  | Unloading add-on "DLSS 5 Neural Rendering" ...
+11:09:07:041 [ 4428] | INFO  | Unregistered add-on "DLSS 5 Neural Rendering".
+11:09:08:829 [25688] | ERROR | [DLSS 5 Neural Rendering] vtable::Hook(Failed to find NVSDK_NGX_D3D12_EvaluateFeature_C)
+11:09:08:830 [25688] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: detoured NGX module copy [0] C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_7621da800da0efae\_nvngx.dll (core)
+11:09:08:830 [25688] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: detoured NGX module copy [1] H:\Steam\steamapps\common\Grand Theft Auto V Enhanced\nvngx_dlss.dll
+11:09:08:831 [25688] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: D3D12 NGX hooks installed across 2 module copy(ies); inline DLSS contract capture armed
+11:09:11:432 [ 7200] | WARN  | Failed to resolve search path 'H:\Steam\steamapps\common\Grand Theft Auto V Enhanced\reshade-shaders\Shaders\' with error code 3.
+11:13:47:860 [ 7200] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: NGX feature create intercepted: feature=11 (DLSSG/FrameGeneration), slot=0
+11:14:13:229 [16768] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: skipping NR on NGX evaluate: feature 11 (DLSSG/FrameGeneration) is not DLSS/DLSSD; frame generation and other NGX features are untouched
+11:14:16:021 [24388] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: NR toggled OFF via F6
+11:14:38:393 [24388] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: NR toggled ON via F6
+11:15:12:667 [25784] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: NGX feature create intercepted: feature=1 (DLSS/DLAA), slot=0
+11:15:12:888 [28612] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: signed DLSSNR 310.8.0 D3D12 runtime initialized
+11:15:12:978 [28612] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: created inline NR resources 1920x1080 -> 1920x1080 (native) format=10
+11:15:12:980 [28612] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: NGX feature create intercepted: feature=18 (DLSSNR/reserved-18), slot=0
+11:15:13:171 [28612] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: feature 18 created via the signed snippet after DLSS/DLAA for NR input 1920x1080 -> output 1920x1080 with guides 1920x1080
+11:15:13:172 [28612] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: inline feature 18 evaluation succeeded (count=1, NR input 1920x1080 (guides 1280x720), output 1920x1080 [native])
+11:15:13:828 [28272] | INFO  | [DLSS 5 Neural Rendering] DLSS5 Generic: inline feature 18 evaluation succeeded (count=60, NR input 1920x1080 (guides 1280x720), output 1920x1080 [native])
